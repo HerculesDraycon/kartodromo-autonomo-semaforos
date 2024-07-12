@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerAnimacao">
+   <children>
+      <ImageView fitHeight="920.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mapa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartVermelho" fitHeight="52.0" fitWidth="28.0" layoutX="71.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-vermelho.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="920.0" fitWidth="334.0" layoutX="918.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/painel.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="kartAzul" fitHeight="52.0" fitWidth="28.0" layoutX="850.0" layoutY="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartAmarelo" fitHeight="52.0" fitWidth="28.0" layoutX="365.0" layoutY="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-amarelo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartBranco" fitHeight="52.0" fitWidth="28.0" layoutX="480.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-branco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartRoxo" fitHeight="52.0" fitWidth="28.0" layoutX="526.0" layoutY="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-roxo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartLaranja" fitHeight="52.0" fitWidth="28.0" layoutX="78.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-laranja.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartRosa" fitHeight="52.0" fitWidth="28.0" layoutX="807.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-rosa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kartVerde" fitHeight="52.0" fitWidth="28.0" layoutX="686.0" layoutY="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kart-verde.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="veloVermelho" layoutX="1079.0" layoutY="40.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: red;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloLaranja" layoutX="1078.0" layoutY="281.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: orange;" value="6.0" />
+      <Slider fx:id="veloAzul" layoutX="939.0" layoutY="160.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: blue;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloRosa" layoutX="939.0" layoutY="390.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: magenta;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloAmarelo" layoutX="1078.0" layoutY="512.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: yellow;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloVerde" layoutX="939.0" layoutY="620.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: green;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloBranco" layoutX="1079.0" layoutY="743.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: white;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="veloRoxo" layoutX="939.0" layoutY="852.0" max="10.0" min="2.0" rotate="180.0" style="-fx-background-color: purple;" value="6.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Button fx:id="percVermelho" layoutX="1110.0" layoutY="60.0" mnemonicParsing="false" onAction="#percVermelho" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: red;" text="Percurso" />
+      <Button fx:id="percAzul" layoutX="971.0" layoutY="182.0" mnemonicParsing="false" onAction="#percAzul" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: blue;" text="Percurso" />
+      <Button fx:id="percLaranja" layoutX="1111.0" layoutY="300.0" mnemonicParsing="false" onAction="#percLaranja" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: orange;" text="Percurso" />
+      <Button fx:id="percRosa" layoutX="971.0" layoutY="411.0" mnemonicParsing="false" onAction="#percRosa" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: magenta;" text="Percurso" />
+      <Button fx:id="percAmarelo" layoutX="1110.0" layoutY="530.0" mnemonicParsing="false" onAction="#percAmarelo" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: yellow;" text="Percurso" />
+      <Button fx:id="percVerde" layoutX="971.0" layoutY="642.0" mnemonicParsing="false" onAction="#percVerde" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: green;" text="Percurso" />
+      <Button fx:id="percBranco" layoutX="1111.0" layoutY="762.0" mnemonicParsing="false" onAction="#percBranco" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: white;" text="Percurso" />
+      <Button fx:id="percRoxo" layoutX="971.0" layoutY="872.0" mnemonicParsing="false" onAction="#percRoxo" prefHeight="14.0" prefWidth="100.0" style="-fx-background-color: purple;" text="Percurso" />
+      <ImageView fx:id="t1" fitHeight="926.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t2" fitHeight="920.0" fitWidth="936.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t3" fitHeight="933.0" fitWidth="1012.0" layoutX="-6.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t4" fitHeight="920.0" fitWidth="992.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t5" fitHeight="920.0" fitWidth="1051.0" layoutX="2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t6" fitHeight="926.0" fitWidth="933.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t7" fitHeight="920.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="t8" fitHeight="926.0" fitWidth="926.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/trace8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/voltar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoVoltar" layoutX="2.0" layoutY="4.0" mnemonicParsing="false" onAction="#botaoVoltar" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="878.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/reset.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoReset" layoutX="878.0" layoutY="-1.0" mnemonicParsing="false" onAction="#botaoReset" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
