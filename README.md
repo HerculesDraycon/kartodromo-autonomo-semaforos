@@ -8,7 +8,7 @@
 
 ![corporative](https://img.icons8.com/?size=40&id=VZEOwb3lft8h&format=png&color=FFFFFF)
 #### Projeto realizado por Hércules S. Oliveira, Graduando em Bacharelado em Ciência da Computação pela Universidade Estadual do Sudoeste da Bahia. <br>Docente da matéria e Orientador do projeto: Professor Marlos André Marques Simões de Oliveira.
-Junho do 2024
+Junho de 2024
 
 _________________________________________________________________________________________
 
