@@ -1,7 +1,7 @@
 # Kartódromo Autônomo
 
 ![about](https://img.icons8.com/?size=40&id=3439&format=png&color=FFFFFF)
-#### Este projeto é a implementação em JavaFX de um Problema de IPC (Inter-Process-Communication) simulando um trânsito de veículos autônomos e foi proposto na disciplina de Programação Concorrente no 3º Semestre do curso de Bacharelado em Ciência da Computação da Universidade Estadual do Sudoeste da Bahia. <br>O Problema proposto trata das Threads de veículos que percorrem o caminho em seus respectivos percursos, que são sorteados quando o trabalho é proposto na matéria. <br>O desafio propõe oito diagramas de percursos diferentes para cada veículo. Enquanto em uma via só é possível trafegar um veículo, seus trajetos se sobrepõem em alguns setores e possíveis colisões ou deadlocks devem ser evitadas durante a execução do programa. <br>Para solucionar esse problema, evitando as colisões ou uma possível deadlock, são utilizados semáforos implementados por todo o diagrama e cada um deles opera de forma a não permitir  que dois ou mais processos acessem mutuamente a região crítica (que é a via para apenas um veículo).
+#### Este projeto é a implementação em JavaFX de um Problema de IPC (Inter-Process-Communication) simulando um trânsito de veículos autônomos e foi proposto na disciplina de Programação Concorrente no 3º Semestre do curso de Bacharelado em Ciência da Computação da Universidade Estadual do Sudoeste da Bahia. <br>O Problema proposto trata das Threads de veículos que percorrem o caminho em seus respectivos percursos, que são sorteados quando o trabalho é proposto na matéria. <br>O desafio propõe oito diagramas de percursos diferentes para cada veículo. Enquanto em uma via só é possível trafegar um veículo, seus trajetos se sobrepõem em alguns setores e colisões ou deadlocks podem ocorrer durante a execução do programa. <br>Para solucionar esse problema, evitando as colisões ou uma possível deadlock, são utilizados semáforos implementados por todo o diagrama e cada um deles opera de forma a não permitir  que dois ou mais processos acessem mutuamente a região crítica.
 
 <mark> Reprodução parcial do programa em funcionamento: <mark/><br>
 ![gif](https://github.com/HerculesDraycon/kartodromo-autonomo-semaforos/blob/main/img/gif.gif)
@@ -17,3 +17,4 @@ ________________________________________________________________________________
 - Baixe o repositório
 - Descompacte a pasta gerada
 - No diretório raiz da pasta descompactada, compile e execute o arquivo Principal.java
+
